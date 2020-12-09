@@ -1,8 +1,6 @@
-'use strict'
-
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-typescript-plus',
+    title: 'Trustee Helper',
     description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
     keywords: 'gatsbyjs, gatsby, javascript, sample, something',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
@@ -20,6 +18,18 @@ module.exports = {
         path: `${__dirname}/src/content`
       }
     },
+    {
+      resolve: `gatsby-source-firestore-easy`,
+      options: {
+        adminCredential: {
+          // eslint-disable-next-line global-require
+          credential: process.env.FIREBASE_CREDENTIAL,
+          databaseURL: 'https://trustee-83b59.firebaseio.com'
+        },
+        collections: ['collectionPath', 'otherCollection/someDocument/subCollection', 'iThinkYouGetTheIdea']
+      }
+    },
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {

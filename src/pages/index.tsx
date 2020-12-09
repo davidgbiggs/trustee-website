@@ -9,10 +9,8 @@ const IndexPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link>
+        <h1>Home Page</h1>
+        <p>Marketing info here!</p>
       </Container>
     </Page>
   </IndexLayout>

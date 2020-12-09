@@ -1,3 +1,5 @@
+import firebase from 'firebase'
+
 interface CSSModule {
   [className: string]: string
 }

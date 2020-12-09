@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 import normalize from '../styles/normalize'
+// import { FirebaseProvider } from '../services/FirebaseProvider'
 
 const StyledLayoutRoot = styled.div`
   display: flex;
